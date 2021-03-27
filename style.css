@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body::before{
+    background-color: #d4418e;
+    background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+    z-index: -2;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.form_container{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_container .form_title{
+    text-align: center;
+    margin: 1vh 1vw;
+    font-family: 'Sansita Swashed', cursive;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.form_container .form_title h1{
+    font-size: 3vh;
+    transition: 1s ease;
+}
+
+.form_container .form_title h1:hover{
+    text-shadow: 2px 2px 10px #B8C6DB;
+}
+
+.form_container .form_body{
+    background-image: linear-gradient(90deg, #E8DBFC, #F8F9D2);
+    border-radius: 2vh;
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+.form_container .form_body form .date_personale{
+    display: flex;
+}
+
+.form_container .form_body form .date_personale .nume{
+    flex: 1;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container .form_body form .date_personale .nume.nume_stanga{
+    margin: 0 1vw 0 0;
+}
+
+.form_container .form_body form .date_personale .nume.nume_dreapta{
+    margin: 0 0 0 1vw;
+}
+
+.form_container .form_body form .date_personale .nume .nume_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form_container .form_body form .date_personale .nume .nume_container input{
+    width: 100%;
+    padding: 1vh;
+    font-size: 2vh;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+
+.form_container .form_body form .date_personale .nume .nume_container input:hover{
+    border-style: dashed;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form_container .form_body form .intrebare{
+    margin: 1vh 0;
+}
+
+.form_container .form_body form .intrebare div input{
+    transition: 0.5s ease;
+}
+
+.form_container .form_body form .intrebare div input:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form_container .form_body form .intrebare.intrebare4 div select{
+    font-size: 2vh;
+}
+
+.form_container .form_body form .intrebare.intrebare5 div select{
+    font-size: 2vh;
+}
+
+.form_container .form_body form .intrebare.intrebare6 div textarea{
+    border: 1px solid black;
+    font-size: 2vh;
+    transition: 0.5s ease;
+}
+
+.form_container .form_body form .intrebare.intrebare6 div textarea:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form_container .submit_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form_container .submit_container input{
+    padding: 1vh 2vw;
+    border-radius: 0.75vh;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2vh;
+    outline: none;
+    border: 0.5vh solid black;
+    color: white;
+    transition: 0.5s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form_container .submit_container .input_submit{
+    margin: 0 1vh 0 0;
+    background-color: purple;
+}
+
+.form_container .submit_container .input_reset{
+    margin: 0 0 0 1vh;
+    background-color: #0652c5;
+}
+
+.form_container .submit_container input:hover{
+    border-radius: 5vh;
+    color: black;
+    background-color: gold;
+    transform: scale(1.15);
+    transition: 1s ease;
+}
+
+.form_container .form_copyright{
+    text-align: center;
+    margin: 1vh 1vw;
+    font-size: 3vh;
+}
+
+.form_container .form_copyright h6{
+    color: white;
+}
+
+.form_container .form_copyright h6 a{
+    color: white;
+    transition: 1s ease;
+}
+
+.form_container .form_copyright h6 a:hover{
+    color: gold;
+    text-shadow: 2px 2px 10px #B8C6DB;
+}
